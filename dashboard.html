@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+   <title>Tableau de bord</title>
+   <meta content="" name="description">
+   <meta content="" name="keywords">
+
+   <!-- Favicons -->
+   <link href="assets/img/favicon.png" rel="icon">
+   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.gstatic.com" rel="preconnect">
+   <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+   <!-- Font AweSome Icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Vendor CSS Files -->
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+   <!-- Template Main CSS File -->
+   <link href="assets/css/style.css" rel="stylesheet">
+   <!-- Custom CSS File -->
+   <link href="assets/css/custom.css" rel="stylesheet">
+
+   <!-- =======================================================
+  * Template Name: NiceAdmin - v2.2.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="header fixed-top d-flex align-items-center">
+
+      <div class="d-flex align-items-center justify-content-between">
+         <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+            <span class="d-none d-lg-block" style="color: black;">E-BLOOD</span>
+         </a>
+         <i style="color:red;" class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+
+      <div class="search-bar">
+         <form class="search-form d-flex align-items-center" method="POST" action="#">
+            <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+            <button type="submit" title="Search"><i style="color:red;" class="bi bi-search"></i></button>
+         </form>
+      </div>
+
+      <nav class="header-nav ms-auto">
+         <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown">
+
+               <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i style="color:red;" class="bi bi-bell"></i>
+                  <span class="badge bg-dark badge-number">4</span>
+               </a>
+
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                  <li class="dropdown-header">
+                     Vous avez 4 notifications
+                     <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">Voir tout</span></a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                     <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+                     <div>
+                        <h4>Hopital Pikine</h4>
+                        <p>Un homme a besoin de sang </p>
+                        <p>30 min. ago <u>Dr Cheikh Sow</u></p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                     <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+                     <div>
+                        <h4>Hopital de Diourbel</h4>
+                        <p></p>
+                        <p>1 hr. ago</p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                     <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+                     <div>
+                        <h4>Hopital Fann</h4>
+                        <p>Les poches de sang sont vides </p>
+                        <p>2 hrs. ago Dr Sarr</p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                     <i style="color:red;" class="bi bi-info-circle text-primary"></i>
+                     <div>
+                        <h4>Clinique Simplon</h4>
+                        <p>Urgence un passient a besoin de sang O+</p>
+                        <p>4 hrs. ago Dr Samba Kane</p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li class="dropdown-footer">
+                     <a href="#">voir tous les notifications</a>
+                  </li>
+
+               </ul>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+               <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i style="color:red;" class="bi bi-chat-left-text"></i>
+                  <span class="badge bg-success badge-number">3</span>
+               </a><!-- End Messages Icon -->
+
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                  <li class="dropdown-header">
+                     Vous avez 3messages
+                     <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">View all</span></a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="message-item">
+                     <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                     <div>
+                        <h4>Hopital de Diourbel</h4>
+                        <p>Merci a docteur Kane ,vous avez sauvé une vie </p>
+                        <p>1 hr. ago <u>Dr Cheikh Sow</u></p>
+                     </div>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="message-item">
+                     <a href="#">
+                        <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                        <div>
+                           <h4>Abdou laye Sall</h4>
+                           <p>Merci a vous avez sauvé ma mere </p>
+                           <p>6 hrs. ago <u>>Abdou laye Sall</u></p>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="message-item">
+                     <a href="#">
+                        <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                        <div>
+                           <h4>Jack Ethienne Ndiaye </h4>
+                           <p>Merci a vous je suis sauvé , grace a vous </p>
+                           <p>8 hrs. ago</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+
+                  <li class="dropdown-footer">
+                     <a href="#">Voir plus</a>
+                  </li>
+
+               </ul>
+
+            </li>
+
+            <li class="nav-item dropdown pe-3">
+
+               <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                  <!-- <img src="assets/img/profile-img.PNG" alt="Profile" class="rounded-circle"> -->
+                  <div class="style=font-size: 40px;">
+                     <i class="bi bi-person text-black fs-1"></i>
+                  </div>
+
+                  <span class="d-none d-md-block dropdown-toggle ps-2 username">Mouhamed Dieye</span>
+               </a>
+
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                     <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i style="color:red;" class="bi bi-person"></i>
+                        <span>Mon Profile</span>
+                     </a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                     <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i style="color:red;" class="bi bi-gear"></i>
+                        <span>Parametre Compte</span>
+                     </a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                     <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i style="color:red;" class="bi bi-question-circle"></i>
+                        <span>Avoir de l'aide</span>
+                     </a>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+
+                  <li>
+                     <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                        <i style="color:red;" class="bi bi-box-arrow-right"></i>
+                        <span>Deconnexion</span>
+                     </a>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+      </nav>
+
+   </header>
+   <!-- End Header -->
+
+   <!-- ======= Sidebar ======= -->
+   <aside id="sidebar" class="sidebar">
+
+      <ul class="sidebar-nav" id="sidebar-nav">
+         
+         <li class="nav-heading">Pages</li>
+         <li class="nav-item">
+            <a class="nav-link " href="Acceuil.html">
+               <i class="text-secondary bi bi-house-door"></i>
+               <span class="text-dark">Acceuil</span>
+            </a>
+            
+         </li>
+         <li class="nav-item">
+            <a class="nav-link  text-white" href="standBy.html">
+               <i class=" bi bi-hourglass"></i>
+               <span class="text-dark">Publication en attente</span>
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link " href="annonce.html">
+               <i class=" bi bi-megaphone-fill "></i>
+               <span class="text-dark">Annonce</span>
+            </a>
+         </li>
+         
+         <li class="nav-item">
+            <a class="nav-link " href="profile.html">
+               <i class="text-secondary bi bi-person"></i>
+               <span class="text-dark">Profil</span>
+            </a>
+
+         </li>
+
+
+         
+         <li class="nav-item">
+            <a class="nav-link bg-danger text-white " href="dashboard.html">
+               <i class="text-white bi bi-grid"></i>
+               <span class="">Tableau de bord</span>
+            </a>
+         </li>
+         
+         <li class="nav-item">
+            <a class="nav-link " href="pages-faq.html">
+               <i class="text-secondary bi bi-question-circle"></i>
+               <span class="text-dark">F.A.Q</span>
+            </a>
+         </li>
+         
+         <li class="nav-item">
+            <a class="nav-link " href="propos.html">
+               <i class="text-secondary bi-file-earmark-fill "></i>
+               <span class="text-dark">A propos</span>
+            </a>
+
+         </li>
+
+
+
+
+   </aside>
+   <!-- End Sidebar-->
+
+   <main id="main" class="main p-1">
+      <section class="section row">
+
+         <!--dashbord  -->
+         <div class="card">
+            <div class="card-body">
+               <h4 class="card-title">Repatition des groupes Sanguins à la demande Demande</h4>
+               <div class="row mx-0">
+                  <div class="col-sm-12">
+                     <div class="d-flex justify-content-between mt-2 text-dark mb-2">
+                        <div><span class="font-weight-bold">300</span> Demandes</div>
+                        <div>Novembre 2021</div>
+                     </div>
+                     <div class="progress progress-md grouped mb-2">
+                        <div class="progress-bar  bg-danger" role="progressbar" style="width: 30%" aria-valuenow="25"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 20%" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar  bg-primary" role="progressbar" style="width: 10%" aria-valuenow="25"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-dark-light" role="progressbar" style="width: 25%" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12">
+                     <div class="traffic-source-legend">
+                        <div class="d-flex justify-content-between mb-1 mt-2">
+                           <div class="font-weight-bold">Groupe Sanguin</div>
+                           <div class="font-weight-bold">TOTAL</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-danger"></span>A +</div>
+                           <div>30%</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-info"></span>O+</div>
+                           <div>20%</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-primary"></span>B+</div>
+                           <div>10%</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-warning"></span>O-</div>
+                           <div>10%</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-success"></span>B-</div>
+                           <div>5%</div>
+                        </div>
+                        <div class="d-flex justify-content-between legend-label">
+                           <div><span class="bg-dark"></span>AB-</div>
+                           <div>25%</div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-body">
+               <h4 class="card-title">Niveau de satisfaction Hopitaux</h4>
+               <div class="table-responsive mt-3">
+                  <table class="table table-header-bg" id="satisfaction">
+                     <thead>
+                        <tr class="fs-x-small" style="font-size:small">
+                           <th class="fs-10">
+                              Hopital
+                           </th>
+                           <th class="fs-10">
+                              Demandes
+                           </th>
+                           <th class="fs-10">
+                              Demandes Satisfaites
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-us mr-2" title="us" id="us"></i> Dalal Diam
+                           </td>
+                           <td>
+                              200
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-dark" role="progressbar" style="width: 25%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    25%
+                                 </div>
+                              </div>
+                           </td>
+
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-at mr-2" title="us" id="at"></i> Abass Ndao
+                           </td>
+                           <td>
+                              600
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-dark" role="progressbar" style="width: 50%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    50%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon  flag-icon-fr mr-2" title="us" id="fr"></i> Hopital Ouakam
+                           </td>
+                           <td>
+                              700
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-dark" role="progressbar" style="width: 10%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    10%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-de mr-2" title="us" id="de"></i> Hopital de Pikine
+                           </td>
+                           <td>
+                              205
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-dark" role="progressbar" style="width: 70%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    70%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-de mr-2" title="us" id="de"></i> Fann
+                           </td>
+                           <td>
+                              243
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-dark" role="progressbar" style="width: 70%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    70%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="filter">
+               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                     <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+               </ul>
+            </div>
+
+            <div class="card-body pb-0">
+               <h5 class="card-title">Repartition des alertes suivants les localites <span>| Novembre</span></h5>
+
+               <div id="trafficChart"
+                  style="min-height: 400px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
+                  class="echart" _echarts_instance_="ec_1637966023473">
+                  <div
+                     style="position: relative; width: 280px; height: 400px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                     <canvas data-zr-dom-id="zr_0" width="420" height="600"
+                        style="position: absolute; left: 0px; top: 0px; width: 280px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                  </div>
+                  <div class=""
+                     style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(63px, 241px, 0px); border-color: rgb(250, 200, 88); pointer-events: none; visibility: hidden; opacity: 0;">
+                     <div style="margin: 0px 0 0;line-height:1;">
+                        <div style="font-size:14px;color:#666;font-weight:400;line-height:1;">Alertes Totales</div>
+                        <div style="margin: 10px 0 0;line-height:1;">
+                           <div style="margin: 0px 0 0;line-height:1;"><span
+                                 style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#fac858;"></span><span
+                                 style="font-size:14px;color:#666;font-weight:400;margin-left:2px">Email</span><span
+                                 style="float:right;margin-left:20px;font-size:14px;color:#666;font-weight:900">580</span>
+                              <div style="clear:both"></div>
+                           </div>
+                           <div style="clear:both"></div>
+                        </div>
+                        <div style="clear:both"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+                     echarts.init(document.querySelector("#trafficChart")).setOption({
+                        tooltip: {
+                           trigger: 'item'
+                        },
+                        legend: {
+                           top: '5%',
+                           left: 'center'
+                        },
+                        series: [{
+                           name: 'Access From',
+                           type: 'pie',
+                           radius: ['40%', '70%'],
+                           avoidLabelOverlap: false,
+                           label: {
+                              show: false,
+                              position: 'center'
+                           },
+                           emphasis: {
+                              label: {
+                                 show: true,
+                                 fontSize: '18',
+                                 fontWeight: 'bold'
+                              }
+                           },
+                           labelLine: {
+                              show: false
+                           },
+                           data: [{
+                              value: 1048,
+                              name: 'Dakar'
+                           },
+                           {
+                              value: 735,
+                              name: 'Saint-Louis'
+                           },
+                           {
+                              value: 580,
+                              name: 'Touba '
+                           },
+                           {
+                              value: 484,
+                              name: 'Thies'
+                           },
+                           {
+                              value: 300,
+                              name: 'Tambacounda'
+                           }
+                           ]
+                        }]
+                     });
+                  });
+               </script>
+
+            </div>
+         </div>
+         <div class="col-12 mx-auto col-lg-6">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Evoulution des demandes de dons</h5>
+
+                  <!-- Bar Chart -->
+                  <canvas id="barChart"
+                     style="max-height: 400px; display: block; box-sizing: border-box; height: 126px; width: 252px;"
+                     width="504" height="252"></canvas>
+                  <script>
+                     document.addEventListener("DOMContentLoaded", () => {
+                        new Chart(document.querySelector('#barChart'), {
+                           type: 'bar',
+                           data: {
+                              labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juilet'],
+                              datasets: [{
+                                 label: 'Bar Chart',
+                                 data: [65, 59, 80, 81, 56, 55, 40],
+                                 backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 205, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(201, 203, 207, 0.2)'
+                                 ],
+                                 borderColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(255, 159, 64)',
+                                    'rgb(255, 205, 86)',
+                                    'rgb(75, 192, 192)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(153, 102, 255)',
+                                    'rgb(201, 203, 207)'
+                                 ],
+                                 borderWidth: 1
+                              }]
+                           },
+                           options: {
+                              scales: {
+                                 y: {
+                                    beginAtZero: true
+                                 }
+                              }
+                           }
+                        });
+                     });
+                  </script>
+                  <!-- End Bar CHart -->
+
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-body">
+               <h4 class="card-title">Part des repondants qui promettent un don suivant la localite</h4>
+               <div class="table-responsive mt-3">
+                  <table class="table table-header-bg" id="satisfaction">
+                     <thead>
+                        <tr class="fs-x-small" style="font-size:small">
+                           <th class="fs-10">
+                              Localite
+                           </th>
+                           <th class="fs-10">
+                              Totale promesse
+                           </th>
+                           <th class="fs-10">
+                              Promesse respectee
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-us mr-2" title="us" id="us"></i> Louga
+                           </td>
+                           <td>
+                              200
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    25%
+                                 </div>
+                              </div>
+                           </td>
+
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-at mr-2" title="us" id="at"></i> Dakar Medina
+                           </td>
+                           <td>
+                              600
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    50%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon  flag-icon-fr mr-2" title="us" id="fr"></i> Dakar Pikine
+                           </td>
+                           <td>
+                              700
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    10%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-de mr-2" title="us" id="de"></i> Diourbel
+                           </td>
+                           <td>
+                              205
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    70%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fs-small">
+                              <i class="flag-icon flag-icon-de mr-2" title="us" id="de"></i> Saint-Louis
+                           </td>
+                           <td>
+                              243
+                           </td>
+                           <td>
+                              <div class="row mx-0 align-items-center">
+                                 <div class="col-8 col-md-10">
+                                    <div class="progress progress-sm">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 p-0 fs-small col-md-2">
+                                    70%
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- End Dashboard -->
+      </section>
+   </main>
+   <!-- End #main -->
+
+   <!-- Vendor JS Files -->
+   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/chart.js/chart.min.js"></script>
+   <script src="assets/vendor/echarts/echarts.min.js"></script>
+   <script src="assets/vendor/quill/quill.min.js"></script>
+   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+   <!-- Template Main JS File -->
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/dynamism.js"></script>
+
+</body>
+
+</html>
